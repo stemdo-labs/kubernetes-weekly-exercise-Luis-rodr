@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: phpmyadmin-db-config
+  namespace: phpmyadmin
+data:
+  DATABASE_HOST: "mariadb"
+  PMA_PORT: "3306"
+  PMA_USER: "bn_myapp"
+  PMA_PASSWORD: nil ## No password is safer than no password
+  ## Also I dont have much time left to do this so no secrets this time
